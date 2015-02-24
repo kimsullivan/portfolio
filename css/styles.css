@@ -1,0 +1,375 @@
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,300italic,400italic,500italic);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
+
+body{
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 38px;
+	height: 100%;
+}
+
+a{
+	text-decoration: underline;
+	color: rgba(66,182,138,1);
+	transition: .3s ease;
+}
+
+a:hover{
+	background-color: rgba(66,182,138,1);
+	color: white;
+	text-decoration: none;
+
+}
+
+header{
+	width: 100%;
+}
+
+.intro{
+	width: 640px;
+	text-align: left;
+	margin: 240px auto 150px;
+	padding: 0 20px;
+}
+
+.intro h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 36px;
+}
+
+.intro h4{
+	font-size: 26px;
+	font-weight: 300;
+	margin-top: -15px;
+}
+
+
+.avatar{
+	margin: 0 0 20px 0;
+}
+
+
+
+/*----MENU----*/
+
+nav{
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	margin: 0;
+	text-indent: 999;
+
+}
+
+nav a:hover{
+	background-color: #fff;
+}
+
+.button{
+	height: 50px;
+	width: 50px;
+	z-index: 2000;
+
+}
+
+.button-img{
+	display: inline;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 999;
+	width: 50px;
+	
+}
+
+
+.overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(63,175,132,0.95);
+	overflow: none;
+}
+
+.wrap{
+	color: #fff;
+	width: 725px;
+	margin: 0 auto;
+
+}
+
+.wrap ul.wrap-nav{
+	margin: 140px 0;}
+
+.wrap ul.wrap-nav > li{
+	font-size: 66px;
+	list-style-type: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 100;
+
+}
+
+.wrap ul.wrap-nav > li a{
+	padding: 25px 0;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	opacity: 1;
+
+}
+
+.wrap ul.wrap-nav > li a:hover{
+	opacity: .5;
+	background-color: transparent !important;
+}
+
+.social, .social svg{
+	margin: 45px 0px;
+	fill: #fff;
+	transition: .3s ease;
+}
+
+svg:hover{
+	opacity: .5;
+}
+
+/*---- DEVELOPMENT SCROLL ----*/
+
+
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+	position: fixed;
+	z-index: 9999;
+	right: 100px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.cbp-fbscroller > nav a {
+	display: block;
+	position: relative;
+	color: transparent;
+	height: 50px;
+}
+
+.cbp-fbscroller > nav a:after {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+}
+
+.cbp-fbscroller > nav a:hover:after {
+	background: rgba(255,255,255,0.6);
+}
+
+.cbp-fbscroller > nav a.cbp-fbcurrent:after {
+	background: #fff;
+}
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#fbsection1 {
+	background-image: url(../img/1.jpg);
+}
+
+#fbsection2 {
+	background-image: url(../img/2.jpg);
+}
+
+#fbsection3 {
+	background-image: url(../img/3.jpg);
+}
+
+#fbsection4 {
+	background-image: url(../img/4.jpg);
+}
+
+#fbsection5 {
+	background-image: url(../img/5.jpg);
+}
+
+
+/*---- CONTACT ----*/
+
+
+.contact{
+	width: 640px;
+	text-align: left;
+	margin: 140px auto 150px;
+	padding: 0 20px;
+}
+
+.contact_page{
+}
+
+
+
+/* Labels are titles for the text fields. You can use a placeholder instead if you like*/
+label 
+{
+    display:block;
+    margin-top:20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100 !important;
+    color: #fff;
+    line-height: 20px;
+
+}
+
+::-webkit-input-placeholder {
+   color: #abaeab;
+   font-weight: 100;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #abaeab; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #abaeab;
+}
+
+:-ms-input-placeholder {  
+   color: #262726;  
+}
+
+/* Centres the form within the page */
+form 
+{
+    margin:0 auto;
+    width:640px;
+}
+
+/* Styles the text boxes */
+input, textarea, file {
+	font-size: 18px;
+	width: 620px;
+	height:35px;
+	border: none;
+	border-bottom: 1px solid rgba(63,175,132,.5);
+	padding:10px;
+	margin-top:3px;
+	color: rgba(63,175,132,1);
+}
+
+:focus {
+    outline: 0;
+    /* or */
+    outline: none;
+}
+
+input:active{
+	color: #000;
+}
+	input:focus {
+		border-bottom: 1px solid rgba(63,175,132,.5);
+	}
+		
+	}
+
+	 textarea:focus {
+	 	outline: none;
+	 	border: transparent;
+
+	 }
+
+/* Styles the text area boxes (message field) */	
+textarea 
+{
+	border-bottom: 1px solid rgba(63,175,132,.5);
+	height:170px;
+	border-bottom: none;
+	line-height: 30px;
+	padding:10px;
+	resize: none;
+	border-bottom: transparent;
+
+}
+
+
+/* Styles the submit button */
+#submit {
+	/* background:url(images/submit.png); */
+	width:100%;
+	height:55px;
+	text-align: center;
+	/* text-indent:-9999px; */
+	margin-top:15px;
+	cursor:pointer;
+	background-color: #000;
+	color: #fff;
+	line-height: 40px;
+	transition: .3s ease;
+
+
+
+}
+
+/* Styles the submit hover */	
+#submit:hover {
+	color:#fff;
+	border-bottom: 1px solid rgba(63,175,132,.5);
+	opacity:0.9;
+	background-color: rgba(63,175,132,1);
+}
+
+/* Styles the cancel button*/	
+#cancel {
+	/* background:url(images/cancel.png); */
+	width:127px;
+	height:28px;
+	text-align: center;
+	/* text-indent:-9999px; */
+	border:none;
+	margin-top:20px;
+	cursor:pointer;
+}
+
+/* Styles the cancel hover */
+#cancel:hover {
+	color:#fff;
+	background-color: #000;
+	opacity:0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
