@@ -8,28 +8,30 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/stylesheet.css">
 		<script src="js/jquery-1.11.2.min.js"></script>
-		<script>
+				<script>
 		$(document).ready(function(){
-		$('.btn-close').fadeOut(100);
+		$('.btn-close').fadeOut(300);
 		var open = false;
 		$('.button a').on('click',function(){
 		if(open == false){
-		$('.overlay, .btn-close').fadeIn(100);
-		$('nav ul li, .btn-open').fadeOut(100);
+		$('.overlay, .btn-close').fadeIn(300);
+		$('nav ul li, .btn-open').fadeOut(300);
 		open = true;
 		} else {
-		$('.overlay, .btn-close').fadeOut(100)
-		$('nav ul li, .btn-open').fadeIn(100);
+		$('.overlay, .btn-close').fadeOut(300)
+		$('nav ul li, .btn-open').fadeIn(300);
 		open = false;
 		}
 		});
 		$('.overlay').on('click', function(){
-		$('.overlay, .btn-close').fadeOut(100);
-		$('nav ul li, .btn-open').fadeIn(100);
+		$('.overlay, .btn-close').fadeOut(300);
+		$('nav ul li, .btn-open').fadeIn(300);
 		open = false;
 		});
 		$('.wrap').on('click', function(){
 		return false;
+		
+
 		});
 		})
 		</script>
@@ -41,17 +43,24 @@
 				<div class="button">
 					<a href="#">
 						<img class="btn-open" src="img/menu.png" alt="">
-						<img class="btn-close" src="img/close.png" alt="">
 					</a>
 				</div>
 			</nav>
 			<div class="overlay">
+			<nav>
+				<div class="button">
+					<a href="#">
+						
+						<img class="btn-close" src="img/close.png" alt=""></a>
+					
+				</div>
+			</nav>
 				<div class="wrap">
 					<ul class="wrap-nav">
-						<li><a href="#">about me</a></li>
-						<li><a href="development.html">development</a></li>
-						<li><a href="#">design</a></li>
-						<li><a href="#">contact</a></li>
+						<li><a href="javascript:void(0);">About Me</a></li>
+						<li><a href="javascript:void(0);">Development</a></li>
+						<li><a href="javascript:void(0);">Design</a></li>
+						<li><a href="#">Contact</a></li>
 						<div class="social">
 							<a href="#">
 								<svg id="linkedin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
